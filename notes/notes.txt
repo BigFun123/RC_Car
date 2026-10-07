@@ -1,23 +1,7 @@
-decode the output from a toy rc car (WIFI UFO)
-
-IP Address:
-192.168.1.1
-
-ports open:
-OPEN: 5007
-OPEN: 7070
-
-possible control port: 7099, send 01 01 UDP
-
-possible video stream. RTSP over TCP
-rtsp://192.168.1.1:7070/webcam
-
-
-test one possible solution:
-first send two bytes 01 01 to port 7070 UDP
-this should enable data stream
-read back from the ports
-
 car manufacturer
 shantou chenghai honghuida toys factory
 model kf29
+
+tested with 
+camera servo tilt mdoel, 
+fixed camra model.

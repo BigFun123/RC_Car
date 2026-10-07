@@ -1,5 +1,14 @@
 # KF29 WiFi RC Car
 
+![RC car GUI screenshot](./art/screenshot.png)
+
+## RC Car remote control via WIFI
+
+
+To connect to the car and your internet, plug in a network cable and then connect to the WIFI Car WIFI host.
+
+## Description
+
 Tools for the Shantou Chenghai Honghuida Toys Factory KF29 WiFi FPV car.
 
 ## Confirmed facts
@@ -81,7 +90,7 @@ The decoder sends the unlock packet periodically, listens on UDP `7099`, recogni
 
 ## Camera tilt
 
-The camera has an active servo that returns to its forward position at startup. The September 30 capture confirmed the fifth byte also carries camera tilt commands. The GUI's **Tilt up** and **Tilt down** buttons send the corresponding neutral-axis command briefly, then stop.
+The camera has an active servo that returns to its forward position at startup. The fifth byte also carries camera tilt commands. The GUI's **Tilt up** and **Tilt down** buttons send the corresponding neutral-axis command briefly, then stop.
 
 ## Evidence and tooling
 
@@ -90,4 +99,3 @@ The camera has an active servo that returns to its forward position at startup. 
 - `inspect_pcap.py`: standard-library packet-flow/payload inspection helper.
 - `notes.txt`: original notes.
 
-The car is privately owned and testing should be performed with the vehicle stationary or in a clear area.

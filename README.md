@@ -32,7 +32,8 @@ To control the car, you send 8 bytes continually over UDP. Each byte tells the c
 - Camera tilt up command: `03 33 80 80 10 88`
 - Camera tilt down command: `03 33 80 80 20 88`
 
-The control capture came from `PCAPdroid_24_Sept_22_50_19.pcap` while using the official app. The captured app client was `10.215.173.1`.
+I captured some packets from the android add and decoded them using wireshark. This helped reverse engineer the control packets. The control capture came from `PCAPdroid_24_Sept_22_50_19.pcap` while using the official app.
+The app linked in the manual did not have camera tilt controls, but other FPV car apps on the app store have camera controls.
 
 ## Run the GUI
 

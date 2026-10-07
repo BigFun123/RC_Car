@@ -9,7 +9,7 @@
 - Expected RTSP endpoint: `rtsp://192.168.1.1:7070/webcam`
 - Unlock packet: UDP payload `01 01`
 - Confirmed product identification: Shantou Chenghai Honghuida Toys Factory, model `KF29`.
-- Confirmed Wi-Fi SSID: `WIFI-UFO-0c4aad`.
+- Confirmed Wi-Fi SSID: `WIFI-UFO-0c4aad`.  (different per car to allow multi car play)
 - Confirmed app: Google Play `wifi car`, package `com.cooingdv.wificar`.
 
 ## Existing tooling

@@ -11,6 +11,11 @@ To connect to the car and your internet, plug in a network cable and then connec
 
 Tools for the Shantou Chenghai Honghuida Toys Factory KF29 WiFi FPV car.
 
+## How it works
+
+When the RC car switches on, it creates a local WIFI network on 192.168.1.1. It exposes the camera feed on rtsp://192.168.1.1:7070/webcam using rtsp protocol, which is a popular protocol for ip cameras.
+To control the car, you send 8 bytes continually over UDP. Each byte tells the car to do something, turn the wheel, go forward, tilt the camera, etc.
+
 ## Confirmed facts
 
 - Wi-Fi SSID: `WIFI-UFO-0c4aad`
@@ -91,6 +96,17 @@ The decoder sends the unlock packet periodically, listens on UDP `7099`, recogni
 ## Camera tilt
 
 The camera has an active servo that returns to its forward position at startup. The fifth byte also carries camera tilt commands. The GUI's **Tilt up** and **Tilt down** buttons send the corresponding neutral-axis command briefly, then stop.
+
+The tilt servo seems to be very rough, any attempt to fine tune the tilt angle has failed, so it tilts in +- 15 degree increments.
+
+## Macros / Servo probe
+
+The car has some built in macros, such as drift driving
+and auto turn. These vary from model to model.
+
+## Pulse mode
+
+Typically the car has two speeds, slow and fast driving. Pulse mode is a software speed control to add range to the speed of the motors through pulsing on/off, to 'nudge' the car rather than drive it at high speed. In this mode the joystick adjusts the pulse width, creating a pseudo-PWM speed control.
 
 ## Evidence and tooling
 

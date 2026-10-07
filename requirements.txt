@@ -1,0 +1,3 @@
+# GUI video decoding for the KF29 RTSP stream
+opencv-python>=4.8
+Pillow>=10.0
